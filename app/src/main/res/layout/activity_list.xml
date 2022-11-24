@@ -29,11 +29,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:orientation="vertical">
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_video"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:listitem="@layout/item"
-            tools:itemCount="3"/>
+            tools:itemCount="4"
+            android:scrollbars="vertical"/>
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

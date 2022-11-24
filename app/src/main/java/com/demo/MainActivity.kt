@@ -15,12 +15,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        getEvent()
+        //getEvent()
         runBlocking {
-            autoRun()
+            //autoRun()
         }
     }
-    private fun getEvent(){
+   /* private fun getEvent(){
         var count = 0
         binding.apply {
             btnNext.setOnClickListener {
@@ -60,11 +60,11 @@ class MainActivity : AppCompatActivity() {
             binding.pbLoad.visibility = View.GONE
             binding.tvCount.text = "0"
         }
-        /*runBlocking {
+        *//*runBlocking {
             //delay(2000L)
             binding.pbLoad.visibility = View.GONE
             binding.tvCount.text = "0"
-        }*/
+        }*//*
     }
     private suspend fun autoRun(){
         var num = 0
@@ -88,5 +88,5 @@ class MainActivity : AppCompatActivity() {
             }
         }
         Log.e("TAG", "autoRun time: $time")
-    }
+    }*/
 }
