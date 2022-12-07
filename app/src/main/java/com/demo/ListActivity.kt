@@ -1,6 +1,8 @@
 package com.demo
 
 import android.annotation.SuppressLint
+import android.content.ComponentName
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -16,7 +18,7 @@ class ListActivity : AppCompatActivity(){
     var listAdapter = ShowListAdapter()
     var videos = ArrayList<VideoModel>()
     var video =  VideoModel()
-    val viewModel: ViewModel by lazy {
+    private val viewModel: ViewModel by lazy {
         ViewModelProvider(this)[ViewModel::class.java]
     }
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +26,7 @@ class ListActivity : AppCompatActivity(){
         binding = ActivityListBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initAdapter()
-        //initViewModel()
+        initViewModel()
     }
     @SuppressLint("NotifyDataSetChanged")
     private fun initViewModel(){

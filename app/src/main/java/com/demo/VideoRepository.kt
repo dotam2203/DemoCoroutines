@@ -6,10 +6,6 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import retrofit2.Response
 
-/**
- * Author: tamdt35@fpt.com.vn
- * Date:  23/11/2022
- */
 class VideoRepository {
     suspend fun getListVideos(): Flow<Response<List<VideoModel>>> = flow {
         val request = CallApi.loadApi.getListVideos()

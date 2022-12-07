@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">DemoCoroutines</string>
+    <string name="app_name">Icon Old</string>
+    <string name="app_name1">Icon new</string>
+    <string name="icon_new">Icon New</string>
+    <string name="icon_old">Icon Old</string>
 </resources>

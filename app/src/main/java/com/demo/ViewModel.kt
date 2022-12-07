@@ -5,10 +5,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-/**
- * Author: tamdt35@fpt.com.vn
- * Date:  21/11/2022
- */
+
 class ViewModel : ViewModel(){
     private val videoRepository = VideoRepository()
     private val _videos = MutableStateFlow(emptyList<VideoModel>())
